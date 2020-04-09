@@ -1,12 +1,19 @@
-import Layout from '../components/Layout';
+import React from 'react';
+import Layout from '../src/components/Layout';
+import CharacterCard from '../src/components/CharacterCard';
 import fetch from 'isomorphic-unfetch';
 
 const Index = ({ characters }) => {
   return (
     <Layout>
-      <ul>
-        {characters.results.map((character, i) => <li key={i}>{character.name}</li>)}
-      </ul>
+      {characters.results.map(character =>
+        <CharacterCard
+          key={character.id}
+          name={character.name}
+          image={character.image}
+        />
+      )
+      }
     </Layout>
   );
 }
