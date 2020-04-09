@@ -1,0 +1,6 @@
+.container {
+  margin: 0 auto;
+  width: 1024px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
