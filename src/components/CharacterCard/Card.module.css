@@ -1,9 +1,10 @@
 .card {
   max-width: 300px;
   margin-bottom: 30px;
-  margin-right: 5px;
+  margin-right: 7px;
   overflow: hidden;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .imageSection {

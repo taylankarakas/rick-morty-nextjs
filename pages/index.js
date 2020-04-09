@@ -9,6 +9,7 @@ const Index = ({ characters }) => {
       {characters.results.map(character =>
         <CharacterCard
           key={character.id}
+          id={character.id}
           name={character.name}
           image={character.image}
           status={character.status}
