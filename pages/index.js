@@ -11,6 +11,9 @@ const Index = ({ characters }) => {
           key={character.id}
           name={character.name}
           image={character.image}
+          status={character.status}
+          species={character.species}
+          gender={character.gender}
         />
       )
       }
